@@ -12,6 +12,7 @@
 		A349C57E1D7E2AEF00F8581A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C57C1D7E2AEF00F8581A /* Main.storyboard */; };
 		A349C5801D7E2AEF00F8581A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A349C57F1D7E2AEF00F8581A /* Assets.xcassets */; };
 		A349C5831D7E2AEF00F8581A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C5811D7E2AEF00F8581A /* LaunchScreen.storyboard */; };
+		A349C58B1D7E349E00F8581A /* GGTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349C58A1D7E349E00F8581A /* GGTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A349C57F1D7E2AEF00F8581A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A349C5821D7E2AEF00F8581A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A349C5841D7E2AEF00F8581A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A349C58A1D7E349E00F8581A /* GGTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A349C57F1D7E2AEF00F8581A /* Assets.xcassets */,
 				A349C5811D7E2AEF00F8581A /* LaunchScreen.storyboard */,
 				A349C5841D7E2AEF00F8581A /* Info.plist */,
+				A349C58A1D7E349E00F8581A /* GGTableViewController.swift */,
 			);
 			path = "Saca el coto";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A349C57B1D7E2AEF00F8581A /* ViewController.swift in Sources */,
+				A349C58B1D7E349E00F8581A /* GGTableViewController.swift in Sources */,
 				A349C5791D7E2AEF00F8581A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				A349C5891D7E2AEF00F8581A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
