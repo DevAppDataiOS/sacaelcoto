@@ -1,0 +1,6 @@
+framework module Pods_Saca_el_coto {
+  umbrella header "Pods-Saca el coto-umbrella.h"
+
+  export *
+  module * { export * }
+}
