@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		977AC63F1D7E34AC0097DA02 /* TTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977AC63E1D7E34AC0097DA02 /* TTCollectionViewCell.swift */; };
 		A349C5791D7E2AEF00F8581A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349C5781D7E2AEF00F8581A /* AppDelegate.swift */; };
 		A349C57B1D7E2AEF00F8581A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349C57A1D7E2AEF00F8581A /* ViewController.swift */; };
 		A349C57E1D7E2AEF00F8581A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C57C1D7E2AEF00F8581A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		977AC63E1D7E34AC0097DA02 /* TTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCollectionViewCell.swift; sourceTree = "<group>"; };
 		A349C5751D7E2AEF00F8581A /* Saca el coto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saca el coto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A349C5781D7E2AEF00F8581A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A349C57A1D7E2AEF00F8581A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A349C57F1D7E2AEF00F8581A /* Assets.xcassets */,
 				A349C5811D7E2AEF00F8581A /* LaunchScreen.storyboard */,
 				A349C5841D7E2AEF00F8581A /* Info.plist */,
+				977AC63E1D7E34AC0097DA02 /* TTCollectionViewCell.swift */,
 			);
 			path = "Saca el coto";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977AC63F1D7E34AC0097DA02 /* TTCollectionViewCell.swift in Sources */,
 				A349C57B1D7E2AEF00F8581A /* ViewController.swift in Sources */,
 				A349C5791D7E2AEF00F8581A /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +301,7 @@
 				A349C5891D7E2AEF00F8581A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
