@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7476A5732C5B1EB7CFEB69DD7DF00929AA74FE6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7476A5732C5B1EB7CFEB69DD7DF00929AA74FE6C" : 9223372036854775807,
+    "7444B847F5635F6B0E0183188CE9C178C494B753" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A156AEAF-366F-4E46-B79C-CC11BBB05110",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7476A5732C5B1EB7CFEB69DD7DF00929AA74FE6C" : "sacaelcoto\/",
+    "7444B847F5635F6B0E0183188CE9C178C494B753" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Saca el coto",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Saca el coto.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:appdatacursos\/curso-git.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7444B847F5635F6B0E0183188CE9C178C494B753"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DevAppDataiOS\/sacaelcoto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7476A5732C5B1EB7CFEB69DD7DF00929AA74FE6C"
+    }
+  ]
+}
