@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A9B7CFDB51075D675EF3BF /* Pods_Saca_el_coto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FE6B6F77213A553C1DA4D6 /* Pods_Saca_el_coto.framework */; };
 		A349C5791D7E2AEF00F8581A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349C5781D7E2AEF00F8581A /* AppDelegate.swift */; };
 		A349C57B1D7E2AEF00F8581A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349C57A1D7E2AEF00F8581A /* ViewController.swift */; };
 		A349C57E1D7E2AEF00F8581A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C57C1D7E2AEF00F8581A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1FE6B6F77213A553C1DA4D6 /* Pods_Saca_el_coto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saca_el_coto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A349C5751D7E2AEF00F8581A /* Saca el coto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saca el coto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A349C5781D7E2AEF00F8581A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A349C57A1D7E2AEF00F8581A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A349C57F1D7E2AEF00F8581A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A349C5821D7E2AEF00F8581A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A349C5841D7E2AEF00F8581A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAD43C384BA66948B7F7E58 /* Pods-Saca el coto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saca el coto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saca el coto/Pods-Saca el coto.debug.xcconfig"; sourceTree = "<group>"; };
+		EE35233AEE98353882196F1E /* Pods-Saca el coto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saca el coto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saca el coto/Pods-Saca el coto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A9B7CFDB51075D675EF3BF /* Pods_Saca_el_coto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39EFA2F70759B27DE619162A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBAD43C384BA66948B7F7E58 /* Pods-Saca el coto.debug.xcconfig */,
+				EE35233AEE98353882196F1E /* Pods-Saca el coto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40E8379325387AEE0B9AC197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE6B6F77213A553C1DA4D6 /* Pods_Saca_el_coto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A349C56C1D7E2AEF00F8581A = {
 			isa = PBXGroup;
 			children = (
 				A349C5771D7E2AEF00F8581A /* Saca el coto */,
 				A349C5761D7E2AEF00F8581A /* Products */,
+				39EFA2F70759B27DE619162A /* Pods */,
+				40E8379325387AEE0B9AC197 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A349C5871D7E2AEF00F8581A /* Build configuration list for PBXNativeTarget "Saca el coto" */;
 			buildPhases = (
+				418AECB31640E0E5E0C00E35 /* [CP] Check Pods Manifest.lock */,
 				A349C5711D7E2AEF00F8581A /* Sources */,
 				A349C5721D7E2AEF00F8581A /* Frameworks */,
 				A349C5731D7E2AEF00F8581A /* Resources */,
+				CDEE21FFA0A0773F1DF1A95C /* [CP] Embed Pods Frameworks */,
+				6AB031C645521D4FC030B4B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		418AECB31640E0E5E0C00E35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB031C645521D4FC030B4B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saca el coto/Pods-Saca el coto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEE21FFA0A0773F1DF1A95C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saca el coto/Pods-Saca el coto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A349C5711D7E2AEF00F8581A /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		A349C5881D7E2AEF00F8581A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBAD43C384BA66948B7F7E58 /* Pods-Saca el coto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Saca el coto/Info.plist";
@@ -268,6 +344,7 @@
 		};
 		A349C5891D7E2AEF00F8581A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE35233AEE98353882196F1E /* Pods-Saca el coto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Saca el coto/Info.plist";
