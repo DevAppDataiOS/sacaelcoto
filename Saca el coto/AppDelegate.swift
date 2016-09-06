@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+
+            
+            // ...
+    
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "quehayhoy"
+            $0.server = "https://parseyovoy.herokuapp.com/Parse"
+        }
+        Parse.initialize(with: configuration)
         return true
     }
 
