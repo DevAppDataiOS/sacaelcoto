@@ -12,6 +12,7 @@
 		A349C57E1D7E2AEF00F8581A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C57C1D7E2AEF00F8581A /* Main.storyboard */; };
 		A349C5801D7E2AEF00F8581A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A349C57F1D7E2AEF00F8581A /* Assets.xcassets */; };
 		A349C5831D7E2AEF00F8581A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349C5811D7E2AEF00F8581A /* LaunchScreen.storyboard */; };
+		A3641B371D8B6A12003C30E6 /* SacaElCotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3641B361D8B6A12003C30E6 /* SacaElCotoDetailViewController.swift */; };
 		A375CF191D87500D005DDD69 /* SacaElCotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375CF181D87500D005DDD69 /* SacaElCotoTableViewCell.swift */; };
 		A395D1541D80D2EC004E0AA0 /* SacaElCotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395D1531D80D2EC004E0AA0 /* SacaElCotoTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		A349C57F1D7E2AEF00F8581A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A349C5821D7E2AEF00F8581A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A349C5841D7E2AEF00F8581A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3641B361D8B6A12003C30E6 /* SacaElCotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SacaElCotoDetailViewController.swift; sourceTree = "<group>"; };
 		A375CF181D87500D005DDD69 /* SacaElCotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SacaElCotoTableViewCell.swift; sourceTree = "<group>"; };
 		A395D1531D80D2EC004E0AA0 /* SacaElCotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SacaElCotoTableViewController.swift; sourceTree = "<group>"; };
 		EBAD43C384BA66948B7F7E58 /* Pods-Saca el coto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saca el coto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saca el coto/Pods-Saca el coto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				A349C5841D7E2AEF00F8581A /* Info.plist */,
 				A395D1531D80D2EC004E0AA0 /* SacaElCotoTableViewController.swift */,
 				A375CF181D87500D005DDD69 /* SacaElCotoTableViewCell.swift */,
+				A3641B361D8B6A12003C30E6 /* SacaElCotoDetailViewController.swift */,
 			);
 			path = "Saca el coto";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				A349C5791D7E2AEF00F8581A /* AppDelegate.swift in Sources */,
 				A395D1541D80D2EC004E0AA0 /* SacaElCotoTableViewController.swift in Sources */,
 				A375CF191D87500D005DDD69 /* SacaElCotoTableViewCell.swift in Sources */,
+				A3641B371D8B6A12003C30E6 /* SacaElCotoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
