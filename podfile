@@ -4,6 +4,4 @@ use_frameworks!
 target 'Saca el coto' do
   pod 'Parse'
   pod 'SideMenu'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
 end

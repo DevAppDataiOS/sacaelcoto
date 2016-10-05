@@ -8,20 +8,21 @@
 
 import UIKit
 import Parse
+import CoreLocation
 
 
-
-class SacaElCotoTableViewController: UITableViewController {
+class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDelegate {
     
-    
+    var latitude = 0.00
+    var Longitude = 0.00
    
     var indexSelected = IndexPath();
     //var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "PetiteOyster", "For Kee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh'sChocolate", "Palomino Espresso", "Upstate", "Traif", "Graham Avenue Meats","Waffle & Wolf", "Five Leaves", "Cafe Lore", "Confessional", "Barrafina","Donostia", "Royal Oak", "Thai Cafe"]
    
-    var restaurantNames = ["La boquita", "Barezzito"]
-//var restaurantImages = ["barrafina.jpg","confessional.jpg"]
+    //var restaurantNames = ["La boquita", "Barezzito"]
+   //var restaurantImages = ["background.pdf"]
     var placesArray = [PFObject]()
-    
+    let locationManager = CLLocationManager()
    
 
     override func viewDidLoad() {
@@ -48,6 +49,14 @@ class SacaElCotoTableViewController: UITableViewController {
                 // Log details of the failure
                 print("Error: \(error)")
             }
+            //Instanciar el CLLocationManager
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.startUpdatingLocation()
+            self.locationManager.delegate = self
+            
+            
+            
 
         }
         // Uncomment the following line to preserve selection between presentations
@@ -72,11 +81,13 @@ class SacaElCotoTableViewController: UITableViewController {
         
         
         
-        
+       // cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
         cell.nameLabel.text = object["name"] as? String
+        //cell.nameLabel.text = "hello"
         cell.locationLabel.text = object["direction"] as? String
         cell.typeLabel.text =  object["description"] as? String
         //cell.thumbnailImageView.image = object["image"] as? String
+        cell.promoLabel.text = object["promo"] as? String
         
         let placeImage = object["image"] as! PFFile
         placeImage.getDataInBackground { (data, error) in
@@ -106,7 +117,31 @@ class SacaElCotoTableViewController: UITableViewController {
         
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //get most recent coordinate
+        
+        /*let myCoor = locations[locations.count - 1]
+        
+        //get lat and log
+        
+        let myLat = myCoor.coordinate.latitude
+        let myLog = myCoor.coordinate.longitude
+        
+        print("The users location is: \(myLat)  \(myLog)")*/
+        
+        if let location1 = locations.first {
+            print("Found User's location: \(location1)")
+            print("Latitude: \(location1.coordinate.latitude) Longitude: \(location1.coordinate.longitude)")
+            latitude = location1.coordinate.latitude
+            Longitude = location1.coordinate.longitude
+            
+        }
+    }
     
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to find user's location: \(error.localizedDescription)")
+    }
     // MARK: - Table view data source
 
    // override func numberOfSections(in tableView: UITableView) -> Int {
