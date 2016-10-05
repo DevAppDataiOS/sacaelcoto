@@ -170,17 +170,17 @@ class SacaElCotoTableViewController: UITableViewController {
 
 }*/
     
-    // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let controller = segue.destination as! SacaElCotoDetailViewController
-        //let IndexPath = self.tableView.indexPathForSelectedRow
-        let object = placesArray[indexSelected.row]
-        
-           controller.titleString =  (object["name"] as? String)!
-
-    }
+        if segue.description == "showPlaceDetail"{
+            let controller = segue.destination as! SacaElCotoDetailViewController
+            //let IndexPath = self.tableView.indexPathForSelectedRow
+            let object = placesArray[indexSelected.row]
+            
+            controller.titleString =  (object["name"] as? String)!
+        }
+      
+     }
     
 }

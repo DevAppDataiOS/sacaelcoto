@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMf-Zw-LoC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMf-Zw-LoC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,7 +78,13 @@
                             <outlet property="delegate" destination="Cxn-hr-ziv" id="Lc9-2O-eXA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="VjI-ZH-AB5"/>
+                    <navigationItem key="navigationItem" id="VjI-ZH-AB5">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="CLT-Sr-KDD">
+                            <connections>
+                                <segue destination="MvL-bx-64g" kind="presentation" id="HuU-Kd-4tR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="yhA-po-nsG" kind="show" identifier="showPlaceDetail" id="rY1-jq-IPI"/>
                     </connections>
@@ -85,6 +92,173 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WdH-k7-7ZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044" y="-940.47976011994012"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="TQs-UT-D0V">
+            <objects>
+                <viewController id="MVj-52-Q9c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gpf-mK-7S6"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gk-0n-Ekr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dME-eb-cwt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-Xf-pho">
+                                <frame key="frameInset" minX="16" minY="96" width="36.5" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="PERFIL">
+                                        <attributes>
+                                            <color key="NSColor" red="0.086274509803921567" green="0.40392156862745099" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Avenir-Heavy"/>
+                                            <font key="NSOriginalFont" size="12" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Line Copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="dmh-Tp-1iL">
+                                <frame key="frameInset" minX="16" minY="113" width="274" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Line Copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="dnP-WO-jxG">
+                                <frame key="frameInset" minX="147" minY="113" width="274" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Line Copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-8d-HFn">
+                                <frame key="frameInset" minX="101" minY="364" width="274" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH8-5v-UC6">
+                                <frame key="frameInset" minX="324" minY="94" width="39" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="EDITAR"/>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="140926165128-john-blake-profile-image-full-169 copy 2" translatesAutoresizingMaskIntoConstraints="NO" id="MVO-H8-rd6">
+                                <frame key="frameInset" minX="23" minY="129" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JESUS GUTIERREZ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XO-Tw-BfG">
+                                <frame key="frameInset" minX="81" minY="139" width="128" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="friends_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ncS-Jt-y5J">
+                                <frame key="frameInset" minX="19" minY="189" width="17" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sgb-Xz-aOt">
+                                <frame key="frameInset" minX="44" minY="192" width="61" height="16.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="MI PERFIL">
+                                        <attributes>
+                                            <color key="NSColor" red="0.36862745098039218" green="0.42352941176470588" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Uu-rD-q7w">
+                                <frame key="frameInset" minX="43" minY="236" width="85" height="16.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="MIS EVENTOS">
+                                        <attributes>
+                                            <color key="NSColor" red="0.36862745098039218" green="0.42352941176470588" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FuH-fq-DBC">
+                                <frame key="frameInset" minX="20" minY="237" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Line Copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="odW-lX-pWx">
+                                <frame key="frameInset" minX="16" minY="364" width="274" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cax-No-vvh">
+                                <frame key="frameInset" minX="16" minY="343" width="106.5" height="16.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="NOTIFICACIONES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.086274509803921567" green="0.40392156862745099" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="9Js-WQ-ZfS">
+                                <frame key="frameInset" minX="19" minY="380" width="165" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="PERMITIR NOTIFICACIONES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.36862745098039218" green="0.42352941176470588" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="saca el coto logo blanco" translatesAutoresizingMaskIntoConstraints="NO" id="UjC-7m-niY">
+                                <frame key="frameInset" minX="43" height="28.90%" maxX="32" maxY="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6Y-Sx-RRF">
+                                <color key="onTintColor" red="0.36584642584909827" green="0.44128702814708087" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q6Y-Sx-RRF" firstAttribute="top" secondItem="gpf-mK-7S6" secondAttribute="bottom" constant="309" id="BFQ-wU-ppt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q6Y-Sx-RRF" secondAttribute="trailing" constant="69" id="ZEi-jz-VaK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="NRu-7Z-NDl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpx-Fw-34s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="-143"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="Qmo-cp-KIw">
+            <objects>
+                <navigationController id="MvL-bx-64g" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nsh-SV-wSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="MVj-52-Q9c" kind="relationship" relationship="rootViewController" id="WFR-gW-TPK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxH-qT-5oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="-142"/>
         </scene>
         <!--Saca El Coto Detail View Controller-->
         <scene sceneID="g0t-jz-G43">
@@ -110,6 +284,24 @@
             </objects>
             <point key="canvasLocation" x="1767.2" y="-935.08245877061472"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="n8I-dK-ByS">
+            <objects>
+                <viewController id="vLZ-H4-UWP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tS1-nW-JnV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ho6-VP-eNv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jgs-KM-amd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOa-4e-arA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-656" y="-974"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="x2K-0i-a7e">
             <objects>
@@ -120,13 +312,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Cxn-hr-ziv" kind="relationship" relationship="rootViewController" id="7Py-jo-TIj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IlZ-Lm-LMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.8" y="-940.47976011994012"/>
+            <point key="canvasLocation" x="130" y="-940"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="140926165128-john-blake-profile-image-full-169 copy 2" width="40" height="40"/>
+        <image name="Line Copy 4" width="274" height="1"/>
+        <image name="calendar_icon" width="15" height="15"/>
+        <image name="friends_icon" width="17" height="17"/>
+        <image name="saca el coto logo blanco" width="1044" height="765"/>
+    </resources>
 </document>

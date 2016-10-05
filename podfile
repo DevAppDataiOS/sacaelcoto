@@ -2,5 +2,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Saca el coto' do
-  pod "Parse"
+  pod 'Parse'
+  pod 'SideMenu'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 end

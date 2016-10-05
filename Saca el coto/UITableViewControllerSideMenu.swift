@@ -12,7 +12,7 @@ class UITableViewControllerSideMenu: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,7 +24,8 @@ class UITableViewControllerSideMenu: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
