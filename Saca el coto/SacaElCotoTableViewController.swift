@@ -19,11 +19,10 @@ class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDel
     var indexSelected = IndexPath();
     //var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "PetiteOyster", "For Kee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh'sChocolate", "Palomino Espresso", "Upstate", "Traif", "Graham Avenue Meats","Waffle & Wolf", "Five Leaves", "Cafe Lore", "Confessional", "Barrafina","Donostia", "Royal Oak", "Thai Cafe"]
    
-    //var restaurantNames = ["La boquita", "Barezzito"]
-   //var restaurantImages = ["background.pdf"]
+  
     var placesArray = [PFObject]()
     let locationManager = CLLocationManager()
-   
+    var locationText = [PFGeoPoint]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +77,7 @@ class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDel
         let object = placesArray[indexPath.row]
         
         
-        
+        //19.238300, -103.736432
         
         
        // cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
@@ -89,6 +88,11 @@ class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDel
         //cell.thumbnailImageView.image = object["image"] as? String
         cell.promoLabel.text = object["promo"] as? String
         
+        let userGeoPoint = object["position"] as! PFGeoPoint
+        
+        print("location: \(userGeoPoint.latitude) \(userGeoPoint.longitude)")
+        let userLocation = CLLocation(latitude: latitude, longitude: Longitude)
+        cell.locationLabel.text = "\(userLocation.distance(from: CLLocation(latitude: userGeoPoint.latitude, longitude: userGeoPoint.longitude))/1000)"
         let placeImage = object["image"] as! PFFile
         placeImage.getDataInBackground { (data, error) in
             
@@ -141,6 +145,12 @@ class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDel
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to find user's location: \(error.localizedDescription)")
+    }
+    
+    
+    func getLocation(){
+        
+    
     }
     // MARK: - Table view data source
 
