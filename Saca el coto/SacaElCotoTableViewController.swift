@@ -9,12 +9,15 @@
 import UIKit
 import Parse
 import CoreLocation
+import Foundation
 
 
 class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDelegate {
     
-    var latitude = 0.00
-    var Longitude = 0.00
+   // print(String(format: "%.3f", totalWorkTimeInHours))
+    var latitude = 0.0
+    var Longitude = 0.0
+    
    
     var indexSelected = IndexPath();
     //var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "PetiteOyster", "For Kee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh'sChocolate", "Palomino Espresso", "Upstate", "Traif", "Graham Avenue Meats","Waffle & Wolf", "Five Leaves", "Cafe Lore", "Confessional", "Barrafina","Donostia", "Royal Oak", "Thai Cafe"]
@@ -91,8 +94,17 @@ class SacaElCotoTableViewController: UITableViewController, CLLocationManagerDel
         let userGeoPoint = object["position"] as! PFGeoPoint
         
         print("location: \(userGeoPoint.latitude) \(userGeoPoint.longitude)")
+        
+      // print(String(format: "%.3f", ))
+        
+        // Double(0.123456789).round(4)
+        
         let userLocation = CLLocation(latitude: latitude, longitude: Longitude)
-        cell.locationLabel.text = "\(userLocation.distance(from: CLLocation(latitude: userGeoPoint.latitude, longitude: userGeoPoint.longitude))/1000)"
+        cell.distanceLbl.text = "\(userLocation.distance(from: CLLocation(latitude: userGeoPoint.latitude, longitude: userGeoPoint.longitude))/1000) km"
+        
+        //print(String(format: "%.3f", userLocation ))
+
+        
         let placeImage = object["image"] as! PFFile
         placeImage.getDataInBackground { (data, error) in
             

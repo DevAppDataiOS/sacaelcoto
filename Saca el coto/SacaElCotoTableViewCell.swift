@@ -16,7 +16,10 @@ class SacaElCotoTableViewCell: UITableViewCell {
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var thumbnailImageView: UIImageView!
     @IBOutlet weak var promoLabel: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
    
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         bottomView.backgroundColor = UIColor(colorLiteralRed: 0.16, green: 0.17, blue: 0.21, alpha: 0.3)
